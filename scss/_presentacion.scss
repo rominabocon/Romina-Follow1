@@ -1,0 +1,41 @@
+/*presentacion*/
+
+#sobreMi {
+    display: flex;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 300;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    .sobreMi__romina {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        img {
+            width: 90%;
+            height: 300px;
+            border-radius: 300px;
+        @media all and (min-width: 768px){
+                width: 50%;
+                height: 400px;
+            }
+            @media all and (min-width: 1200px){
+                width: 40%;
+                height: 500px;
+              }    
+            }  
+        }
+    .sobreMi__agente {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .sobreMi__letra {
+        font-size: 20px;
+        font-weight: 500;
+        font-style: italic;
+        text-decoration: underline;
+    }
+            
+}

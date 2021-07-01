@@ -1,0 +1,90 @@
+/* grilla  */
+#contacto {
+    
+    background-color: darksalmon;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 100;
+    border-radius: 50px;
+    text-align: center;
+    width: 300px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 150px;
+    display: grid;
+    grid-template-areas: 
+    "tit "
+    "nom "
+    "mail"
+    "tel"
+    "adul"
+    "meno"
+    "selec"
+    "plan"
+    "coment"
+    "bot";
+    grid-template-columns: 2fr;
+    grid-template-rows: repeat(11,90px);
+    grid-row-gap: 5px;
+	justify-items: center;
+	align-items: center;
+    .contacto__tit {
+                    color: #3600f9c7;
+                    margin-top: 10px;
+                    width: 100%;
+                    text-decoration: underline;
+                    margin-bottom: 10px;
+                    h1 {
+                        font-size: 22px;
+                    }
+                    p {
+                        font-size: 18px;
+                    } 
+    }
+    
+    @media all and (min-width: 768px){
+        width: 600px;
+             font-size: 20px;
+     }
+
+    @media all and (min-width: 1200px){
+    width: 600px;
+    font-size: 25px;
+    }
+
+    .titulo {
+        grid-area: tit;
+    }
+    .nom {
+        grid-area: nom;
+    }
+    .mail {
+        grid-area: mail;
+    }
+    .tel {
+        grid-area: tel;
+    }
+    .adul {
+        grid-area: adul;
+    }
+    .meno {
+        grid-area: meno;
+    }
+    .selec {
+        grid-area: selec;
+        label {
+                width: 100%;
+                display: inline-block;
+                }
+    }
+    .plan {
+        grid-area: plan;
+    }
+    .botones {
+        grid-area: bot;
+        
+    }
+    .coment {
+        grid-area: coment;
+    }
+}
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="disney, agente de viajes, orlando, universal, parques tematicos">
+    <meta name="description" content=" En esta seccion podes cotizar tus vacaciones a Disney y/o Universal.">
+    <title>A un paso de la magia - Formulario de cotizaciones</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body> 
+    <div id="miNavegador">
+        <div class="miNavegador__logo"><a href="../index.html"><img src="../media/follow.png" alt="Follow your Drems Travels"></a></div>
+        <div class="miNavegador__botonera">
+        <ul>
+            <li><a href="presentacion.html" class="miNavegador__link">Sobre mi</a></li>
+            <li><a href="contacto.html" class="miNavegador__link">Cotizaciones</a></li>
+        </ul>    
+        </div>
+        <div class="miNavegador__whatsapp"><a href="https://api.whatsapp.com/send?phone=+5491154090619"><img src="../media/whatsapp.png" alt="Escribeme"></a></div>
+    </div>
+    <form id="contacto" action="#" method="POST">
+           <header class="contacto__tit">
+                <h1>Tus proximas vacaciones a Disney y/o Universal estan a un paso.</h1>
+                 <p>Cotizalas aquí.</p>
+            </header>
+        
+            <div class="nom">
+                <label>Nombre:</label>
+		        <input type="text" name="Nombre" placeholder="Nombre">
+            </div>
+		    <div class="mail">
+                <label>Email:</label>
+		    <input type="email" name="Email" placeholder="nombre@correo.com">
+            </div>
+            <div class="tel">
+            <label>Telefono</label>
+		    <input type="number" name="telefono" placeholder="1155996611">
+            </div>
+            <div class="adul">
+                <label>Cantidad de adultos</label>
+		        <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+			    </select>
+            </div>
+		    <div class="meno">
+            <label>Cantidad de menores de 18</label>
+                <select>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                </select>
+            </div>
+		<div class="selec"> 
+            <p>  Selecciona uno o mas destinos: </p>
+		<label>Walt Disney World
+            <input type="checkbox" name="destino" value="wdw">
+        </label>
+		
+		<label>Universal Studios Orlando
+            <input type="checkbox" name="destino" value="uso">
+        </label>
+		
+		<label>Disneyland
+		<input type="checkbox" name="destino" value="disneyland">
+    </label>
+		<label>Universal Studios Florida
+		<input type="checkbox" name="destino" value="ush">
+    </label>
+         </div>
+		<div class="plan">
+             <label>Planes mas de un destino? Si</label>
+		<input type="radio" name="respuesta" value="si">
+		<label>No</label>
+		<input type="radio" name="respuesta" value="no">
+		<label>Cual?</label>
+        <textarea></textarea>
+        </div>
+		<div class="coment">
+            <label>Comentarios</label>
+		<textarea></textarea>
+        </div>
+        <div class="botones">
+            <input type="submit" name="sube_form" value="Enviar">
+		    <input type="reset" name="resetear" value="Borrar Todo">
+        
+    </div>
+        </form>
+    <footer id="footer">
+        <div class="footer__divisor"></div>
+        <div class="footer__botonera">
+            <ul>
+                <li><a href="https://www.facebook.com/rominafollowyourdreams" class="footer__link" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/rominafollowy" class="footer__link" target="_blank">Twitter</a></li>
+                <li><a href="https://www.instagram.com/rominafollowyourdreams/" class="footer__link" target="_blank">Instagram</a></li>
+            </ul>    
+        </div>
+    </footer>
+    </body>
+</html>

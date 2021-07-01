@@ -1,0 +1,592 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,300;0,400;0,600;0,900;1,100;1,300;1,400;1,600;1,900&display=swap");
+/* grilla  */
+#contacto {
+  background-color: darksalmon;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 100;
+  border-radius: 50px;
+  text-align: center;
+  width: 300px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 150px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "tit " "nom " "mail" "tel" "adul" "meno" "selec" "plan" "coment" "bot";
+  -ms-grid-columns: 2fr;
+      grid-template-columns: 2fr;
+  -ms-grid-rows: (90px)[11];
+      grid-template-rows: repeat(11, 90px);
+  grid-row-gap: 5px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contacto .contacto__tit {
+  color: #3600f9c7;
+  margin-top: 10px;
+  width: 100%;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+#contacto .contacto__tit h1 {
+  font-size: 22px;
+}
+
+#contacto .contacto__tit p {
+  font-size: 18px;
+}
+
+@media all and (min-width: 768px) {
+  #contacto {
+    width: 600px;
+    font-size: 20px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  #contacto {
+    width: 600px;
+    font-size: 25px;
+  }
+}
+
+#contacto .titulo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: tit;
+}
+
+#contacto .nom {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nom;
+}
+
+#contacto .mail {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: mail;
+}
+
+#contacto .tel {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: tel;
+}
+
+#contacto .adul {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: adul;
+}
+
+#contacto .meno {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: meno;
+}
+
+#contacto .selec {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: selec;
+}
+
+#contacto .selec label {
+  width: 100%;
+  display: inline-block;
+}
+
+#contacto .plan {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: plan;
+}
+
+#contacto .botones {
+  -ms-grid-row: 10;
+  -ms-grid-column: 1;
+  grid-area: bot;
+}
+
+#contacto .coment {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: coment;
+}
+
+/*Destinos Orlando*/
+.uso {
+  background-image: url("../media/uso.jpg");
+}
+
+.wdw {
+  background-image: url("../media/wdw.jpg");
+}
+
+.disl {
+  background-image: url("../media/disl.jpg");
+}
+
+.ush {
+  background-image: url("../media/ush.jpg");
+}
+
+#orlando {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  text-align: center;
+  font-weight: 600;
+  font-style: italic;
+  min-width: 375px;
+}
+
+@media all and (min-width: 768px) {
+  #orlando {
+    max-height: 1200px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  #orlando {
+    width: 100%;
+    max-height: 1200px;
+    overflow: hidden;
+  }
+}
+
+#orlando .orlando__tit {
+  color: #3600f9c7;
+  font-size: 25px;
+  margin-top: 10px;
+  width: 100%;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+#orlando .orlando__maps iframe {
+  margin-top: 15px;
+  height: 250px;
+  width: 250px;
+  margin-bottom: 15px;
+}
+
+@media all and (min-width: 768px) {
+  #orlando .orlando__maps iframe {
+    margin-top: 20px;
+    height: 350px;
+    width: 350px;
+    margin-bottom: 20px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  #orlando .orlando__maps iframe {
+    margin-top: 20px;
+    height: 200px;
+    width: 800px;
+    margin-bottom: 20px;
+  }
+}
+
+#orlando .orlando__banner {
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  height: 300px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#orlando .orlando__textos {
+  width: 100%;
+}
+
+#orlando .orlando__textos ul {
+  list-style: none;
+}
+
+@media all and (min-width: 768px) {
+  #orlando .orlando__textos {
+    font-size: 20px;
+  }
+}
+
+#orlando .orlando__parques {
+  margin-top: 50px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+#tarjeta {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  text-align: center;
+  width: 100%;
+}
+
+#tarjeta .tarjeta__pages {
+  width: 70px;
+  background-color: grey;
+  margin-bottom: 15px;
+  height: 100px;
+  padding: 10px;
+  font-size: 8px;
+}
+
+#tarjeta .tarjeta__pages img {
+  width: 80%;
+  height: 80%;
+  margin-top: 10px;
+}
+
+@media all and (min-width: 768px) {
+  #tarjeta .tarjeta__pages {
+    width: 150px;
+    background-color: grey;
+    margin-bottom: 15px;
+    height: 180px;
+    padding: 10px;
+    font-size: 10px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  #tarjeta {
+    margin-top: 20px;
+    height: 350px;
+    margin-bottom: 20px;
+  }
+}
+
+/*footer*/
+#footer {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  font-size: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media all and (min-width: 768px) {
+  #footer {
+    height: 70px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  #footer {
+    height: 100px;
+    font-size: 25px;
+  }
+}
+
+#footer .footer__botonera ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style-position: inside;
+}
+
+#footer .footer__botonera ul li {
+  list-style-image: none;
+  list-style-type: none;
+  padding: 10px;
+}
+
+#footer .footer__link {
+  text-decoration: none;
+}
+
+#footer .footer__divisor {
+  border-top: 1px solid black;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/*presentacion*/
+#sobreMi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 300;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+
+#sobreMi .sobreMi__romina {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#sobreMi .sobreMi__romina img {
+  width: 90%;
+  height: 300px;
+  border-radius: 300px;
+}
+
+@media all and (min-width: 768px) {
+  #sobreMi .sobreMi__romina img {
+    width: 50%;
+    height: 400px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  #sobreMi .sobreMi__romina img {
+    width: 40%;
+    height: 500px;
+  }
+}
+
+#sobreMi .sobreMi__agente {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#sobreMi .sobreMi__letra {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media all and (min-width: 1200px) {
+  body {
+    background: #FFE5D9;
+    background: -webkit-gradient(linear, left top, right top, from(#ECE4DB), color-stop(#FFE5D9), to(#FEC89A));
+    background: linear-gradient(to right, #ECE4DB, #FFE5D9, #FEC89A);
+  }
+}
+
+#miNavegador {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  weight: 400;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 60px;
+  top: 0;
+}
+
+@media all and (min-width: 768px) {
+  #miNavegador {
+    font-size: 30px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  #miNavegador {
+    font-size: 40px;
+    position: fixed;
+    z-index: 10;
+    background: #FFE5D9;
+    background: -webkit-gradient(linear, left top, right top, from(#ECE4DB), color-stop(#FFE5D9), to(#FEC89A));
+    background: linear-gradient(to right, #ECE4DB, #FFE5D9, #FEC89A);
+  }
+}
+
+#miNavegador .miNavegador__whatsapp img {
+  width: 40px;
+  height: 40px;
+}
+
+@media all and (min-width: 768px) {
+  #miNavegador .miNavegador__whatsapp img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+#miNavegador .miNavegador__logo img {
+  width: 40px;
+  height: 40px;
+}
+
+@media all and (min-width: 768px) {
+  #miNavegador .miNavegador__logo img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  #miNavegador .miNavegador__logo img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+#miNavegador .miNavegador__botonera ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style-position: inside;
+}
+
+#miNavegador .miNavegador__botonera li {
+  list-style-image: url("../media/mickey.png");
+}
+
+#miNavegador .miNavegador__link {
+  text-decoration: none;
+}
+
+#miBody {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  text-align: center;
+}
+
+@media all and (min-width: 768px) {
+  #miBody {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  #miBody {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    min-height: 700px;
+  }
+}
+
+#miBody .miBody__tit {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  weight: 600;
+  font-size: 24px;
+  font-style: italic;
+  padding: 15px;
+  width: 100%;
+}
+
+@media all and (min-width: 768px) {
+  #miBody .miBody__tit {
+    font-size: 35px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  #miBody .miBody__tit {
+    font-size: 45px;
+  }
+}
+
+#miBody .miBody_parques {
+  background-color: grey;
+  width: 300px;
+  height: 350px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#miBody .miBody_parques img {
+  width: 80%;
+  height: 80%;
+  margin-top: 10px;
+}
+
+@media all and (min-width: 768px) {
+  #miBody .miBody_parques {
+    background-color: grey;
+    width: 150px;
+    height: 200px;
+    margin-bottom: 15px;
+    min-height: 300px;
+    min-width: 300px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  #miBody .miBody_parques {
+    background-color: grey;
+    width: 300px;
+    height: 350px;
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */

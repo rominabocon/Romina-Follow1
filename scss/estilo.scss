@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,300;0,400;0,600;0,900;1,100;1,300;1,400;1,600;1,900&display=swap');
+@import "grilla";
+@import "destinos";
+@import "footer";
+@import "presentacion";
+ 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+$width: 300px;
+
+@mixin fontStyle($weight,$fontsize) {
+        font-family: 'Fira Sans Condensed', sans-serif;
+        weight: $weight;
+        font-size: $fontsize;
+}
+@mixin textA (){
+    color: #3600f9c7;
+    font-size: 25px;
+    margin-top: 10px;
+    width: 100%;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+@mixin textB () {
+
+    @include fontStyle (600,24px);
+    font-style: italic;
+    padding: 15px;
+    width: 100%;
+    @media all and (min-width: 768px){
+        font-size: 35px;
+      }
+    @media all and (min-width: 1200px){
+        font-size: 45px;
+    }  
+   
+}
+
+body {
+    @media all and (min-width: 1200px){
+        background: #FFE5D9; 
+        background: -webkit-linear-gradient(to right, #ECE4DB, #FFE5D9, #FEC89A);
+        background: linear-gradient(to right, #ECE4DB, #FFE5D9, #FEC89A); 
+       
+       }
+}
+
+#miNavegador {
+    @include fontStyle(400,20px);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    min-height: 60px;
+    top: 0;
+    @media all and (min-width: 768px){
+            font-size: 30px;
+        }
+    @media all and (min-width: 1200px){
+        font-size: 40px;
+        position: fixed;
+        z-index: 10;
+        background: #FFE5D9; 
+        background: -webkit-linear-gradient(to right, #ECE4DB, #FFE5D9, #FEC89A);
+        background: linear-gradient(to right, #ECE4DB, #FFE5D9, #FEC89A); 
+       
+    }
+    .miNavegador__whatsapp {
+        img {
+            width: 40px;
+            height: 40px;
+            @media all and (min-width: 768px){
+                width: 30px;
+                height: 30px;
+            }
+        }
+    } 
+    .miNavegador__logo {
+        img {
+        width: 40px;
+        height: 40px;
+        @media all and (min-width: 768px){
+            width: 70px;
+            height: 70px;
+            }
+        @media all and (min-width: 1200px){
+            width: 120px;
+            height: 120px;
+            }  
+        }  
+    }
+    .miNavegador__botonera {
+        ul {
+        display: inline-flex;
+        list-style-position: inside; 
+        }
+        li {
+            list-style-image: url("../media/mickey.png");
+        }
+    }
+    .miNavegador__link {
+        text-decoration: none;
+    }       
+}
+
+#miBody {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    text-align: center;
+    @media all and (min-width: 768px){
+        justify-content: space-evenly;
+        width: 100%;
+       }
+    @media all and (min-width: 1200px){
+        justify-content: space-evenly;
+        min-height: 700px;
+    }
+    .miBody__tit {
+        @include textB();
+    }
+    .miBody_parques {
+        background-color: grey;
+        width: $width;
+        height: 350px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        padding: 10px;
+        img {
+            width: 80%;
+            height: 80%;
+            margin-top: 10px;
+        }
+        @media all and (min-width: 768px){
+            background-color: grey;
+            width: $width/2;
+            height: 200px;
+            margin-bottom: 15px;
+            min-height: 300px;
+            min-width: 300px;
+        }
+        @media all and (min-width: 1200px){
+            background-color: grey;
+            width: $width;
+            height: 350px;
+            margin-bottom: 15px;
+            font-size: 25px;
+        }
+    }    
+}
+
