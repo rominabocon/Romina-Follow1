@@ -39,14 +39,6 @@ $width: 300px;
    
 }
 
-/*body {
-    @media all and (min-width: 1200px){
-        background: #FFE5D9; 
-        background: -webkit-linear-gradient(to right, #ECE4DB, #FFE5D9, #FEC89A);
-        background: linear-gradient(to right, #ECE4DB, #FFE5D9, #FEC89A); 
-       
-       }
-}*/
 
 #miNavegador {
     @include fontStyle(400,20px);
@@ -63,9 +55,7 @@ $width: 300px;
         font-size: 40px;
         position: fixed;
         z-index: 10;
-        background: #FFE5D9; 
-        background: -webkit-linear-gradient(to right, #ECE4DB, #FFE5D9, #FEC89A);
-        background: linear-gradient(to right, #ECE4DB, #FFE5D9, #FEC89A); 
+        background: white; 
        
     }
     .miNavegador__whatsapp {
