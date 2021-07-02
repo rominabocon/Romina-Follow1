@@ -39,14 +39,14 @@ $width: 300px;
    
 }
 
-body {
+/*body {
     @media all and (min-width: 1200px){
         background: #FFE5D9; 
         background: -webkit-linear-gradient(to right, #ECE4DB, #FFE5D9, #FEC89A);
         background: linear-gradient(to right, #ECE4DB, #FFE5D9, #FEC89A); 
        
        }
-}
+}*/
 
 #miNavegador {
     @include fontStyle(400,20px);
