@@ -5,8 +5,8 @@
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 100;
   border-radius: 30px;
-  margin-top: 150px;
   padding: 15px;
+  margin-top: 25px;
 }
 
 @media all and (min-width: 768px) {
@@ -20,6 +20,7 @@
   #contacto {
     width: 600px;
     font-size: 25px;
+    margin-top: 150px;
   }
 }
 
@@ -285,7 +286,7 @@
 
 #sobreMi .sobreMi__romina {
   width: 100%;
-  margin-top: 130px;
+  margin-top: 15px;
   margin-bottom: 30px;
 }
 
@@ -306,6 +307,7 @@
   #sobreMi .sobreMi__romina img {
     width: 40%;
     height: 500px;
+    margin-top: 130px;
   }
 }
 
