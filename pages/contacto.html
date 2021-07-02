@@ -3,105 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="disney, agente de viajes, orlando, universal, parques tematicos">
     <meta name="description" content=" En esta seccion podes cotizar tus vacaciones a Disney y/o Universal.">
     <title>A un paso de la magia - Formulario de cotizaciones</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body> 
     <div id="miNavegador">
-        <div class="miNavegador__logo"><a href="../index.html"><img src="../media/follow.png" alt="Follow your Drems Travels"></a></div>
-        <div class="miNavegador__botonera">
-        <ul>
-            <li><a href="presentacion.html" class="miNavegador__link">Sobre mi</a></li>
-            <li><a href="contacto.html" class="miNavegador__link">Cotizaciones</a></li>
-        </ul>    
-        </div>
-        <div class="miNavegador__whatsapp"><a href="https://api.whatsapp.com/send?phone=+5491154090619"><img src="../media/whatsapp.png" alt="Escribeme"></a></div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+            <a class="navbar-brand" href="index.html">
+                <img src="../media/follow.png" alt="Logo Follow Your Dreams Travels">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="presentacion.html">Sobre Mi</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="contacto.html">Contacto<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Parques Tematicos
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="wdw.html">Walt Disney World</a>
+                    <a class="dropdown-item" href="universalorlando.html">Universal Orlando Resort</a>
+                    <a class="dropdown-item" href="disneyland.html">Disneyland</a>
+                    <a class="dropdown-item" href="universalhollywood.html">Universal Hollywood Studios</a>
+                  </div>
+                </li>
+            </ul>
+          </div>
+        </nav>
+  </div>
+
+  <form id="contacto" class="container-fluid">
+      <h1 class="contacto__tit">Completa este formulario para cotizar tus proximas vacaciones soñadas.</h1>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Nombre y Apellido</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Tu nombre Completo">
     </div>
-    <form id="contacto" action="#" method="POST">
-           <header class="contacto__tit">
-                <h1>Tus proximas vacaciones a Disney y/o Universal estan a un paso.</h1>
-                 <p>Cotizalas aquí.</p>
-            </header>
-        
-            <div class="nom">
-                <label>Nombre:</label>
-		        <input type="text" name="Nombre" placeholder="Nombre">
-            </div>
-		    <div class="mail">
-                <label>Email:</label>
-		    <input type="email" name="Email" placeholder="nombre@correo.com">
-            </div>
-            <div class="tel">
-            <label>Telefono</label>
-		    <input type="number" name="telefono" placeholder="1155996611">
-            </div>
-            <div class="adul">
-                <label>Cantidad de adultos</label>
-		        <select>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-			    </select>
-            </div>
-		    <div class="meno">
-            <label>Cantidad de menores de 18</label>
-                <select>
-                    <option>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                </select>
-            </div>
-		<div class="selec"> 
-            <p>  Selecciona uno o mas destinos: </p>
-		<label>Walt Disney World
-            <input type="checkbox" name="destino" value="wdw">
-        </label>
-		
-		<label>Universal Studios Orlando
-            <input type="checkbox" name="destino" value="uso">
-        </label>
-		
-		<label>Disneyland
-		<input type="checkbox" name="destino" value="disneyland">
-    </label>
-		<label>Universal Studios Florida
-		<input type="checkbox" name="destino" value="ush">
-    </label>
-         </div>
-		<div class="plan">
-             <label>Planes mas de un destino? Si</label>
-		<input type="radio" name="respuesta" value="si">
-		<label>No</label>
-		<input type="radio" name="respuesta" value="no">
-		<label>Cual?</label>
-        <textarea></textarea>
-        </div>
-		<div class="coment">
-            <label>Comentarios</label>
-		<textarea></textarea>
-        </div>
-        <div class="botones">
-            <input type="submit" name="sube_form" value="Enviar">
-		    <input type="reset" name="resetear" value="Borrar Todo">
-        
+    <div class="form-group">
+    <label for="exampleFormControlInput1">Correo Electronico</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="tucorreo@electronico.com">
     </div>
-        </form>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Cantidad de Adultos</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Cantidad de Menores de 18</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect2">Destinos a Visitar</label>
+      <select multiple class="form-control" id="exampleFormControlSelect2">
+        <option>Walt Disney World</option>
+        <option>Universal Orlando Resort</option>
+        <option>Disneylandia</option>
+        <option>Universl Holyywood Studios</option>
+        <option>Otros Destinos</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Comentarios</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+<div>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal">
+    Enviar
+  </button>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Let de magic begin.</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Gracias por tu contacto. En el plazo de 48hs. me estare comunicando contigo para dar inicio a la planificacion de tus proximas vacaciones magicas.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<button type="reset" class="mt-1 btn btn-secondary btn-lg btn-block" data-toggle="reset" data-target="#exampleModal">
+    Borrar
+  </button>
+  </form>
     <footer id="footer">
         <div class="footer__divisor"></div>
         <div class="footer__botonera">
@@ -112,5 +139,7 @@
             </ul>    
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     </body>
 </html>

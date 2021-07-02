@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,300;0,400;0,600;0,900;1,100;1,300;1,400;1,600;1,900&display=swap');
-@import "grilla";
+@import "formulario";
 @import "destinos";
 @import "footer";
 @import "presentacion";
@@ -42,34 +42,18 @@ $width: 300px;
 
 #miNavegador {
     @include fontStyle(400,20px);
-    display: flex;
-    justify-content: space-around;
     width: 100%;
-    align-items: center;
-    min-height: 60px;
     top: 0;
     @media all and (min-width: 768px){
-            font-size: 30px;
+            font-size: 25px;
         }
     @media all and (min-width: 1200px){
-        font-size: 40px;
+        font-size: 25px;
         position: fixed;
         z-index: 10;
-        background: white; 
-       
+    
     }
-    .miNavegador__whatsapp {
-        img {
-            width: 40px;
-            height: 40px;
-            @media all and (min-width: 768px){
-                width: 30px;
-                height: 30px;
-            }
-        }
-    } 
-    .miNavegador__logo {
-        img {
+    img {
         width: 40px;
         height: 40px;
         @media all and (min-width: 768px){
@@ -77,23 +61,10 @@ $width: 300px;
             height: 70px;
             }
         @media all and (min-width: 1200px){
-            width: 120px;
-            height: 120px;
+            width: 80px;
+            height: 80px;
             }  
-        }  
-    }
-    .miNavegador__botonera {
-        ul {
-        display: inline-flex;
-        list-style-position: inside; 
-        }
-        li {
-            list-style-image: url("../media/mickey.png");
-        }
-    }
-    .miNavegador__link {
-        text-decoration: none;
-    }       
+        }   
 }
 
 #miBody {

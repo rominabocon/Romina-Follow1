@@ -1,0 +1,35 @@
+/* formulario  */
+#contacto {
+    
+    background-color: rgb(116, 108, 106);
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 100;
+    border-radius: 30px;
+    margin-top: 150px;
+    padding: 15px;
+
+    @media all and (min-width: 768px){
+        width: 600px;
+             font-size: 20px;
+     }
+
+    @media all and (min-width: 1200px){
+    width: 600px;
+    font-size: 25px;
+    }
+    .contacto__tit {
+                    color: black;
+                    margin-top: 15px;
+                    width: 100%;
+                    text-decoration: underline;
+                    margin-bottom: 10px;
+                    font-size: 25px;
+                    text-align: center;
+
+    }
+        textarea {
+        resize: none;
+        }
+
+}
+

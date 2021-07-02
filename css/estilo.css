@@ -1,43 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,300;0,400;0,600;0,900;1,100;1,300;1,400;1,600;1,900&display=swap");
-/* grilla  */
+/* formulario  */
 #contacto {
-  background-color: darksalmon;
+  background-color: #746c6a;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 100;
-  border-radius: 50px;
-  text-align: center;
-  width: 300px;
-  padding: 30px;
-  margin: auto;
+  border-radius: 30px;
   margin-top: 150px;
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "tit " "nom " "mail" "tel" "adul" "meno" "selec" "plan" "coment" "bot";
-  -ms-grid-columns: 2fr;
-      grid-template-columns: 2fr;
-  -ms-grid-rows: (90px)[11];
-      grid-template-rows: repeat(11, 90px);
-  grid-row-gap: 5px;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#contacto .contacto__tit {
-  color: #3600f9c7;
-  margin-top: 10px;
-  width: 100%;
-  text-decoration: underline;
-  margin-bottom: 10px;
-}
-
-#contacto .contacto__tit h1 {
-  font-size: 22px;
-}
-
-#contacto .contacto__tit p {
-  font-size: 18px;
+  padding: 15px;
 }
 
 @media all and (min-width: 768px) {
@@ -54,69 +23,18 @@
   }
 }
 
-#contacto .titulo {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: tit;
-}
-
-#contacto .nom {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: nom;
-}
-
-#contacto .mail {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: mail;
-}
-
-#contacto .tel {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: tel;
-}
-
-#contacto .adul {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  grid-area: adul;
-}
-
-#contacto .meno {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-  grid-area: meno;
-}
-
-#contacto .selec {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  grid-area: selec;
-}
-
-#contacto .selec label {
+#contacto .contacto__tit {
+  color: black;
+  margin-top: 15px;
   width: 100%;
-  display: inline-block;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  font-size: 25px;
+  text-align: center;
 }
 
-#contacto .plan {
-  -ms-grid-row: 8;
-  -ms-grid-column: 1;
-  grid-area: plan;
-}
-
-#contacto .botones {
-  -ms-grid-row: 10;
-  -ms-grid-column: 1;
-  grid-area: bot;
-}
-
-#contacto .coment {
-  -ms-grid-row: 9;
-  -ms-grid-column: 1;
-  grid-area: coment;
+#contacto textarea {
+  resize: none;
 }
 
 /*Destinos Orlando*/
@@ -412,78 +330,41 @@
   font-family: 'Fira Sans Condensed', sans-serif;
   weight: 400;
   font-size: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 60px;
   top: 0;
 }
 
 @media all and (min-width: 768px) {
   #miNavegador {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
 @media all and (min-width: 1200px) {
   #miNavegador {
-    font-size: 40px;
+    font-size: 25px;
     position: fixed;
     z-index: 10;
-    background: white;
   }
 }
 
-#miNavegador .miNavegador__whatsapp img {
+#miNavegador img {
   width: 40px;
   height: 40px;
 }
 
 @media all and (min-width: 768px) {
-  #miNavegador .miNavegador__whatsapp img {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-#miNavegador .miNavegador__logo img {
-  width: 40px;
-  height: 40px;
-}
-
-@media all and (min-width: 768px) {
-  #miNavegador .miNavegador__logo img {
+  #miNavegador img {
     width: 70px;
     height: 70px;
   }
 }
 
 @media all and (min-width: 1200px) {
-  #miNavegador .miNavegador__logo img {
-    width: 120px;
-    height: 120px;
+  #miNavegador img {
+    width: 80px;
+    height: 80px;
   }
-}
-
-#miNavegador .miNavegador__botonera ul {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  list-style-position: inside;
-}
-
-#miNavegador .miNavegador__botonera li {
-  list-style-image: url("../media/mickey.png");
-}
-
-#miNavegador .miNavegador__link {
-  text-decoration: none;
 }
 
 #miBody {
