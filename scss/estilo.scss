@@ -73,7 +73,7 @@ $width: 300px;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    font-family: 'Fira Sans Condensed', sans-serif;
+    @include fontStyle(100,16px);
     text-align: center;
     @media all and (min-width: 768px){
         justify-content: space-evenly;
