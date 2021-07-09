@@ -104,30 +104,34 @@
     text-align: center;
     width: 100%;
     .tarjeta__pages {
-        width: 70px;
+        width: 80px;
         background-color: grey;
-        margin-bottom: 15px;
-        height: 100px;
-        padding: 10px;
-        font-size: 5px;
+        height: 110px;
+        padding: 5px;
+        font-size: 8px;
+        box-sizing: unset;
             img {
                 width: 80%;
                 height: 80%;
-                margin-top: 10px;
+                margin-top: 5px;
             }
             @media all and (min-width: 768px){
-            width: 150px;
+                width: 170px;
+                background-color: grey;
+                height: 200px;
+                padding: 10px;
+                font-size: 10px;
+                }
+            @media all and (min-width: 1200px){
+            width: 200px;
             background-color: grey;
-            margin-bottom: 15px;
-            height: 180px;
+            height: 250px;
             padding: 10px;
             font-size: 10px;
             }
     }
     @media all and (min-width: 1200px){
-        margin-top: 20px;
         height: 350px;
-        margin-bottom: 20px;
     }
     
 }
