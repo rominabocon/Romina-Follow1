@@ -38,6 +38,11 @@
   resize: none;
 }
 
+#contacto button:hover {
+  -webkit-transform: scale(1, 1.5);
+          transform: scale(1, 1.5);
+}
+
 /*Destinos Orlando*/
 .uso {
   background-image: url("../media/uso.jpg");

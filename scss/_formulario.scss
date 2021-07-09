@@ -28,8 +28,11 @@
                     text-align: center;
 
     }
-        textarea {
-        resize: none;
+    textarea {
+    resize: none;
+    }
+    button:hover {
+            transform: scale(1,1.5);
         }
 
 }
