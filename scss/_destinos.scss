@@ -6,7 +6,7 @@
      }
  }
 
- @each $parques in mk, ep, ak, hs {
+ @each $parques in mk, ep, ak, hs, unio, ioa, vol, dmk, dca {
     .#{$parques} { 
           background-image:  
            url('../media/#{$parques}.jpg');
@@ -43,6 +43,10 @@
     font-weight: 600;
     font-style: italic;
     min-width: 375px;
+
+    @media all and (min-width: 1200px){
+        margin-top: 100px;
+     }
 
     .orlando__tit {
         @include textA ();
@@ -105,7 +109,7 @@
         margin-bottom: 15px;
         height: 100px;
         padding: 10px;
-        font-size: 8px;
+        font-size: 5px;
             img {
                 width: 80%;
                 height: 80%;

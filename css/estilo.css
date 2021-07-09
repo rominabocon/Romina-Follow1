@@ -71,6 +71,26 @@
   background-image: url("../media/hs.jpg");
 }
 
+.unio {
+  background-image: url("../media/unio.jpg");
+}
+
+.ioa {
+  background-image: url("../media/ioa.jpg");
+}
+
+.vol {
+  background-image: url("../media/vol.jpg");
+}
+
+.dmk {
+  background-image: url("../media/dmk.jpg");
+}
+
+.dca {
+  background-image: url("../media/dca.jpg");
+}
+
 #orlando {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -91,6 +111,12 @@
   font-weight: 600;
   font-style: italic;
   min-width: 375px;
+}
+
+@media all and (min-width: 1200px) {
+  #orlando {
+    margin-top: 100px;
+  }
 }
 
 #orlando .orlando__tit {
@@ -185,7 +211,7 @@
   margin-bottom: 15px;
   height: 100px;
   padding: 10px;
-  font-size: 8px;
+  font-size: 5px;
 }
 
 #tarjeta .tarjeta__pages img {
