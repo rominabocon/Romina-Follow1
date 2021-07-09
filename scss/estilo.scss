@@ -81,7 +81,8 @@ $width: 300px;
        }
     @media all and (min-width: 1200px){
         justify-content: space-evenly;
-        min-height: 630px;
+        min-height: 600px;
+        margin-top: 40px;
     }
     .miBody__tit {
         @include textB();
