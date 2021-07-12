@@ -43,6 +43,10 @@
           transform: scale(1, 1.5);
 }
 
+#contacto .checkList {
+  text-align: center;
+}
+
 /*Destinos Orlando*/
 .uso {
   background-image: url("../media/uso.jpg");
