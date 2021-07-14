@@ -227,7 +227,13 @@
 #tarjeta .tarjeta__pages img {
   width: 80%;
   height: 80%;
-  margin-top: 5px;
+  margin-top: 8px;
+}
+
+@media all and (min-width: 1200px) {
+  #tarjeta .tarjeta__pages img {
+    margin-top: 20px;
+  }
 }
 
 @media all and (min-width: 768px) {
