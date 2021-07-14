@@ -216,7 +216,7 @@
 
 #tarjeta .tarjeta__pages {
   width: 80px;
-  background-color: grey;
+  background-color: #dcc9e1;
   height: 110px;
   padding: 5px;
   font-size: 8px;
@@ -232,27 +232,25 @@
 
 @media all and (min-width: 1200px) {
   #tarjeta .tarjeta__pages img {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 
 @media all and (min-width: 768px) {
   #tarjeta .tarjeta__pages {
     width: 170px;
-    background-color: grey;
     height: 200px;
     padding: 10px;
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 
 @media all and (min-width: 1200px) {
   #tarjeta .tarjeta__pages {
     width: 200px;
-    background-color: grey;
     height: 250px;
     padding: 10px;
-    font-size: 10px;
+    font-size: 20px;
   }
 }
 
@@ -476,7 +474,7 @@
 }
 
 #miBody .miBody_parques {
-  background-color: grey;
+  background-color: #dcc9e1;
   width: 300px;
   height: 350px;
   margin-bottom: 15px;
@@ -492,7 +490,6 @@
 
 @media all and (min-width: 768px) {
   #miBody .miBody_parques {
-    background-color: grey;
     width: 150px;
     height: 200px;
     margin-bottom: 15px;
@@ -503,8 +500,6 @@
 
 @media all and (min-width: 1200px) {
   #miBody .miBody_parques {
-    background-color: grey;
-    width: 300px;
     height: 350px;
     margin-bottom: 15px;
     font-size: 25px;

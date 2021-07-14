@@ -88,7 +88,7 @@ $width: 300px;
         @include textB();
     }
     .miBody_parques {
-        background-color: grey;
+        background-color: #dcc9e1;
         width: $width;
         height: 350px;
         margin-bottom: 15px;
@@ -100,7 +100,7 @@ $width: 300px;
             margin-top: 10px;
         }
         @media all and (min-width: 768px){
-            background-color: grey;
+           
             width: $width/2;
             height: 200px;
             margin-bottom: 15px;
@@ -108,8 +108,7 @@ $width: 300px;
             min-width: 300px;
         }
         @media all and (min-width: 1200px){
-            background-color: grey;
-            width: $width;
+        
             height: 350px;
             margin-bottom: 15px;
             font-size: 25px;
