@@ -100,6 +100,10 @@
   background-image: url("../media/dca.jpg");
 }
 
+.epic {
+  background-image: url("../media/epic.jpg");
+}
+
 #orlando {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -304,10 +308,6 @@
   list-style-image: none;
   list-style-type: none;
   padding: 10px;
-}
-
-#footer .footer__link {
-  text-decoration: none;
 }
 
 #footer .footer__divisor {

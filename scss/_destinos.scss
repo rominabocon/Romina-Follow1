@@ -6,7 +6,7 @@
      }
  }
 
- @each $parques in mk, ep, ak, hs, unio, ioa, vol, dmk, dca {
+ @each $parques in mk, ep, ak, hs, unio, ioa, vol, dmk, dca, epic {
     .#{$parques} { 
           background-image:  
            url('../media/#{$parques}.jpg');
