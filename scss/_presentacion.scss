@@ -1,22 +1,24 @@
 /*presentacion*/
-@mixin banner() {
-    background-position: top;
-    background-size: cover;
-    background-repeat: none;
-    height: 500px;
-    width: 100%;
-    margin-bottom: 20px;
-}
 
 #sobreMi {
     font-family: 'Fira Sans Condensed', sans-serif;
     font-weight: 300;
     .sobreMi__romina {
-        width: 100%;
         margin-bottom: 30px;
         background-image: url(../media/rominabocon.jpg);
-        @include banner ();
-
+        background-position: top;
+        background-size: cover;
+        background-repeat: none;
+        width: 100%;
+        height: 190px;
+        @media all and (min-width: 768px){
+            height: 300px;
+            background-position: center;
+            }
+        @media all and (min-width: 1200px){
+            height: 500px;
+            background-position: top;
+            }
         }
     .sobreMi__intro {
         h1 {
