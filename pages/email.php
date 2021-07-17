@@ -1,5 +1,5 @@
 <?php
-$email_to = "romina.bocon@followyourdreamstravels.com";
+$email_to = "rominabocon@gmail.com";
 $email_subject = "Contacto desde la web";
 $email_message = "Detalles del formulario de contacto:\n\n";
 $email_message .= "Nombre: " . $_POST['inp_nombre'] . "\n";
