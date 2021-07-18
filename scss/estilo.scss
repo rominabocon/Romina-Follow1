@@ -16,28 +16,6 @@ $width: 300px;
         weight: $weight;
         font-size: $fontsize;
 }
-@mixin textA (){
-    color: #3600f9c7;
-    font-size: 25px;
-    margin-top: 10px;
-    width: 100%;
-    text-decoration: underline;
-    margin-bottom: 10px;
-}
-@mixin textB () {
-
-    @include fontStyle (600,24px);
-    font-style: italic;
-    padding: 15px;
-    width: 100%;
-    @media all and (min-width: 768px){
-        font-size: 35px;
-      }
-    @media all and (min-width: 1200px){
-        font-size: 45px;
-    }  
-   
-}
 
 
 #miNavegador {
@@ -51,7 +29,6 @@ $width: 300px;
         font-size: 25px;
         position: fixed;
         z-index: 10;
-    
     }
     img {
         width: 40px;
@@ -81,11 +58,13 @@ $width: 300px;
        }
     @media all and (min-width: 1200px){
         justify-content: space-evenly;
-        min-height: 600px;
-        margin-top: 40px;
+        min-height: 500px;
+        margin-top: 90px;
     }
     .miBody__tit {
-        @include textB();
+        @include fontStyle(600,45px);
+        width: 100%;
+        margin-bottom: 25px;
     }
     .miBody_parques {
         background-color: #dcc9e1;

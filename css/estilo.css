@@ -7,6 +7,7 @@
   border-radius: 30px;
   padding: 15px;
   margin-top: 25px;
+  color: white;
 }
 
 @media all and (min-width: 768px) {
@@ -25,7 +26,7 @@
 }
 
 #contacto .contacto__tit {
-  color: black;
+  color: #dcc9e1;
   margin-top: 15px;
   width: 100%;
   text-decoration: underline;
@@ -443,30 +444,17 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    min-height: 600px;
-    margin-top: 40px;
+    min-height: 500px;
+    margin-top: 90px;
   }
 }
 
 #miBody .miBody__tit {
   font-family: 'Fira Sans Condensed', sans-serif;
   weight: 600;
-  font-size: 24px;
-  font-style: italic;
-  padding: 15px;
+  font-size: 45px;
   width: 100%;
-}
-
-@media all and (min-width: 768px) {
-  #miBody .miBody__tit {
-    font-size: 35px;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  #miBody .miBody__tit {
-    font-size: 45px;
-  }
+  margin-bottom: 25px;
 }
 
 #miBody .miBody_parques {
